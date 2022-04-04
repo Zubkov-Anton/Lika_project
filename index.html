@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Самый главный тег на странице -->
+<head><!-- Шапка нашей страницы: тут будет ее основное описание -->
+    <meta charset="UTF-8"><!-- Кодировка нашей страницы -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- для совместимости с IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Для красивого отображения на телефонах -->
+    <meta name="description" content="Это мой первый пример страницы"><!-- Описание страницы -->
+    <meta name="autor" content="Anton"><!--Автор страницы  -->
+    <title>Lika Photographer</title>
+   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+ <!-- ##################Семантические теги########################
+    <header></header>   - Шапка сайта
+    <nav></nav>         - Навигационное меню
+    <article></article> - Оформление записи в блоге
+    <section></section> - Cекции на сайте
+    <aside></aside>     - Боковая колонка с информацией 
+    <main></main> основное содержание документа
+    <address></address> адрес сайта
+    <footer></footer> подвал
+    <wbr> перенос строки, если это необходимо
+    <time></time> время
+    ################################################################-->
+    <body>
+        <header>
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 my-auto offset-md-0">
+                        <img src="img/logo/logo.png" alt="" class="logo">
+                    </div>
+                    <div class="col-md-4 my-auto offset-md-6">
+                        <nav>
+                            <ul id="navbar">
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">Портфолио</a></li>
+                                <li><a href="#">Услуги и цены <img src="img/angle/angle.png" alt=" angle" class=" angle"></a></li>
+                                <li><a href="#">Инфо</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <section class="carusel container-fluid">
+                <div class="row align-items-end">
+                    <div class="col carusel_left">
+                      <a href="#"><img src="img/pointer/left.png" alt="pointer"></a>
+                    </div>
+                    <div class="col carusel_center">
+                        <a href="#"><img class="carusel_center_1" src="img/pointer/circle_1.png" alt="circle"></a>
+                        <a href="#"><img class="carusel_center_2" src="img/pointer/circle_2.png" alt="circle"></a>
+                        <a href="#"><img class="carusel_center_3" src="img/pointer/circle_3.png" alt="circle"></a>
+                      </div>
+                      <div class="col carusel_right">
+                        <a href="#"><img src="img/pointer/right.png" alt="pointer"></a>
+                      </div>
+                </div>
+        </section>
+
+        <section class="promo">
+                        <div class="promo_text">
+                            <h2 class="header">немного о себе</h2>
+                            <h1 class="name">Фотограф <br> Лика Зубкова</h1>
+                            <div class="promo_text_description">
+                                <p>Добро пожаловать в мой мир фотографии!
+                                <br> Я - фотограф, как это ни банально звучит,<br> но выделить для себя одно направление я не могу, <br> не люблю себя ограничивать.</p> 
+                                <p>Фотография сначала была моим увлечением.<br> Позже это переросло в творчество,<br> а с 2019 года - это моя профессия.</p> 
+                            </div>
+                        </div>
+                        <img class="promo_img" src="img/bj/promo_img.png" alt="promo" class="promo_img">
+        </section>
+        <section class="info">
+            <div class="container">
+                <div class="row">
+                    
+                </div>
+            </div>
+        </section>
+    </body>
