@@ -1,4 +1,5 @@
-$main_color: #FBFBFB
+$main_color: #ffffff
+$shadow: 5px 5px 10px rgba(22,22,22,0.5)
 
 header
     min-height: 72px
@@ -57,7 +58,7 @@ header
         background: $main_color
     &_img
         z-index: 1
-        box-shadow: 5px 5px 10px rgba(22,22,22,0.5)
+        box-shadow: $shadow
     
     .rectangle
         width: 895px
@@ -66,7 +67,7 @@ header
         background: rgba(151, 168, 118, 0.2)
         top: 39px
         left: 15px
-        box-shadow: 5px 5px 10px rgba(22,22,22,0.5)
+        box-shadow: $shadow
     &_text
         padding: 20px 0 0 135px
         &_info
@@ -89,41 +90,59 @@ header
     background: $main_color
     position: relative
     z-index: -2 
-    &_wedding
-        position: relative
+    // &_wedding
+    //     position: relative
+    //     padding: 0 0 100px 0
+    // &_rectangle_wedding
+    //     position: absolute
+    //     z-index: -1
+    //     width: 97.7%
+    //     height: 500px
+    //     background: #FCF9F8
+    //     top: 24px
+    //     left: 24px
+    //     box-shadow: $shadow
+    // &_img_wedding
+    //     display: inline-block
+    &_individual
         padding: 0 0 100px 0
-    &_rectangle_wedding
+    &_col_individual
+        position: relative
+        height: 500px
+        display: flex
+        flex-direction: row-reverse
+        justify-content: space-between
+        padding: 0
+        
+    &_rectangle_individual
         position: absolute
         z-index: -1
         width: 97.7%
-        height: 500px
-        background: #FCF9F8
+        height: 100%
         top: 24px
-        left: 24px
-        box-shadow: 5px 5px 10px rgba(22,22,22,0.5)
-    &_img_wedding
-        display: inline-block
-    &_individual
-        position: relative
-        padding: 0 0 100px 0
-    &_rectangle_individual
-        
-        width: 97.7%
-        height: 500px
+        left: 0px
+        // width: 97.7%
+        // height: 500px
         background: #FCF9F8
-        
-        box-shadow: 5px 5px 10px rgba(22,22,22,0.5)
+        box-shadow: $shadow
     &_img_individual
         display: inline-block
-        position: absolute
-        top: -24px
-        left: 768px
-        box-shadow: 5px 5px 10px rgba(22,22,22,0.5)
+        box-shadow: $shadow
         
-    &_love_store
-        padding: 0 0 100px 0
-    &_city
-        padding: 0 0 100px 0
+    // &_love_store
+    //     position: relative
+    //     padding: 0 0 100px 0
+    // &_rectangle_love_store
+    //     position: absolute
+    //     z-index: -1
+    //     width: 97.7%
+    //     height: 500px
+    //     background: #FCF9F8
+    //     top: 24px
+    //     left: 24px
+    //     box-shadow: $shadow
+    // &_img_love_store
+    //     display: inline-block
 
 
        
