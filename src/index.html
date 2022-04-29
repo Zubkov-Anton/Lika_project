@@ -10,6 +10,7 @@
    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
    <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
    <link rel="stylesheet" href="css/style.min.css">
 </head>
  <!-- ##################Семантические теги########################
@@ -25,26 +26,38 @@
     <time></time> время
     ################################################################-->
     <body>
-        <header>
-            <section class="container-fluid">
-                <div class="row">
-                    <div class="col-md-2 my-auto offset-md-0">
-                        <img src="img/logo/logo.png" alt="logo" class="logo">
-                    </div>
-                    <div class="col-md-4 my-auto offset-md-6">
+         <header>
+            <section class="navbar">
+                <img src="img/logo/logo.png" alt="logo" class="logo">
+                
                         <nav>
-                            <ul class="navbar">
+                            <ul class="navbar_menu">
                                 <li><a href="#">Главная</a></li>
                                 <li><a href="#">Портфолио</a></li>
                                 <li><a href="#">Услуги и цены <img src="img/angle/angle.png" alt=" angle" class=" angle"></a></li>
                                 <li><a href="#">Инфо</a></li>
                             </ul>
                         </nav>
-                    </div>
-                </div>
             </section>
         </header>
-
+        <section class="carousel">
+            <div class="carousel_container">
+                <div class="carousel__inner">
+                    <div>
+                        <img src="img/bj/main1.jpg" alt="1">
+                    </div>
+                    <div>
+                        <img src="img/bj/main2.jpg" alt="2">
+                    </div>
+                    <div>
+                        <img src="img/bj/main3.jpg" alt="3">
+                    </div>
+                </div>
+                <button type="button" class="prev"><img src="img/pointer/left.png" alt="left"></button>
+                <button type="button" class="next"><img src="img/pointer/right.png" alt="right"></button>
+            </div>
+        </section>
+<!--
         <section class="container-fluid carusel">
                 <div class="row align-items-end">
                     <div class="col carusel_left">
@@ -77,25 +90,38 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="info">
-            <!-- <div class="container info_wedding">
+            <div class="container info_wedding">
                 <div class="row row_wedding">
-                    <div class="col-md-10 my-auto offset-md-1 info_wedding">
+                    <div class="col-md-10 my-auto offset-md-1 info_col_wedding">
                             <div class="info_rectangle_wedding">
-
+                                <span class="title_1_wedding">Свадебная <br> </span> 
+                                <span class="title_2_wedding">Фотосессия</span>
+                                    <div class="text_description_wedding">
+                                            В свадебной фотографии присутствует 
+                                            невероятное количество ярких и искренних  эмоций. <br> Мне нравится снимать настоящие 
+                                    эмоции, и я хочу, чтобы вы, рассматривая фотографии со свадьбы спустя несколько лет, снова испытывали то чувство счастья, которое было с вами в этот волшебный день.
+                                    </div>
+                                <span class="description_wedding"></span>
                             </div>
                             <div class="info_img_wedding">
                                 <img src="img/wedding/wedding_photo.jpg" alt="photo">
                             </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="container info_individual">
                 <div class="row row_individual">
                     <div class="col-md-10 my-auto offset-md-1 info_col_individual">
                             <div class="info_rectangle_individual">
-
+                                <span class="title_1_individual">Индивидуальная <br> </span> 
+                                <span class="title_2_individual">Фотосессия</span>
+                                    <div class="text_description_individual">
+                                            <!-- В свадебной фотографии присутствует 
+                                            невероятное количество ярких и искренних  эмоций. <br> Мне нравится снимать настоящие 
+                                    эмоции, и я хочу, чтобы вы, рассматривая фотографии со свадьбы спустя несколько лет, снова испытывали то чувство счастья, которое было с вами в этот волшебный день. -->
+                                    </div>
                             </div>
                             <div class="info_img_individual">
                                 <img src="img/individual/individual_img.jpg" alt="photo">
@@ -103,30 +129,46 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="container info_love_store">
+            <div class="container info_love_store">
                 <div class="row row_love_store">
-                    <div class="col-md-10 my-auto offset-md-1 info_love_store">
+                    <div class="col-md-10 my-auto offset-md-1 info_col_love_store">
                             <div class="info_rectangle_love_store">
-
+                                <span class="title_1_love_store">Фотосессия<br> </span> 
+                                <span class="title_2_love_store">Love Story</span>
+                                    <div class="text_description_love_store">
+                                            <!-- В свадебной фотографии присутствует 
+                                            невероятное количество ярких и искренних  эмоций. <br> Мне нравится снимать настоящие 
+                                    эмоции, и я хочу, чтобы вы, рассматривая фотографии со свадьбы спустя несколько лет, снова испытывали то чувство счастья, которое было с вами в этот волшебный день. -->
+                                    </div>
+                                <span class="description_love_store"></span>
                             </div>
                             <div class="info_img_love_store">
                                 <img src="img/love_store/love_store_img.jpg" alt="photo">
                             </div>
                     </div>
                 </div>
-            </div> -->
-        
+            </div>
+            <div class="container info_city">
+                <div class="row row_city">
+                    <div class="col-md-10 my-auto offset-md-1 info_col_city">
+                            <div class="info_rectangle_city">
+                                <span class="title_1_city">Фотосессия<br> </span> 
+                                <span class="title_2_city">В вашем городе</span>
+                                    <div class="text_description_city">
+                                            <!-- В свадебной фотографии присутствует 
+                                            невероятное количество ярких и искренних  эмоций. <br> Мне нравится снимать настоящие 
+                                    эмоции, и я хочу, чтобы вы, рассматривая фотографии со свадьбы спустя несколько лет, снова испытывали то чувство счастья, которое было с вами в этот волшебный день. -->
+                                    </div>
+                            </div>
+                            <div class="info_img_city">
+                                <img src="img/city/city_img.jpg" alt="photo">
+                            </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
-                    <!-- <div class="col-md-10 my-auto offset-md-1">
-                        <img src="img/individual/individual_img.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-10 my-auto offset-md-1">
-                        <img src="img/love_store/love_store_img.jpg" alt="photo">
-                    </div>
-                    <div class="col-md-10 my-auto offset-md-1">
-                        <img src="img/city/city_img.jpg" alt="photo">
-                    </div> -->
         
-            
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src = "js/script.js"></script>
     </body>
