@@ -26,156 +26,76 @@
     <time></time> время
     ################################################################-->
     <body>
-         <header>
-            <section class="navbar">
-                <img src="img/logo/logo.png" alt="logo" class="logo">
-                
-                        <nav>
-                            <ul class="navbar_menu">
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#">Портфолио</a></li>
-                                <li><a href="#">Услуги и цены <img src="img/angle/angle.png" alt=" angle" class=" angle"></a></li>
-                                <li><a href="#">Инфо</a></li>
-                            </ul>
-                        </nav>
+         <header class="header">
+             <section class="navbar">
+                <img src="img/logo/logo_1.svg" alt="logo" class="logo">
+                 <nav class="nav">
+                        <ul class="navbar_menu">
+                            <li><a href="#">ГЛАВНАЯ</a></li>
+                            <li><a href="#">УСЛУГИ</a></li>
+                            <li><a href="#">ОБУЧЕНИЕ</a></li>
+                            <li><a href="#">КОНТАКТЫ</a></li>
+                            <li><a href="#">ОБ АВТОРЕ</a></li>
+                        </ul>
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </section>
         </header>
+
         <section class="carousel">
             <div class="carousel_container">
-                <div class="carousel__inner">
-                    <div>
-                        <img src="img/bj/main1.jpg" alt="1">
-                    </div>
-                    <div>
-                        <img src="img/bj/main2.jpg" alt="2">
-                    </div>
-                    <div>
-                        <img src="img/bj/main3.jpg" alt="3">
-                    </div>
-                </div>
-                <button type="button" class="prev"><!-- <img src="img/pointer/left.png" alt="left"> -->
-                    <div class="prev-top"></div>
-                    <div class="prev-bottom"></div>
-                </button>
-                <button type="button" class="next"><!-- <img src="img/pointer/right.png" alt="right"> -->
-                    <div class="next-top"></div>
-                    <div class="next-bottom"></div>
-                </button>
-            </div>
-            
-        </section>
-<!--
-        <section class="container-fluid carusel">
-                <div class="row align-items-end">
-                    <div class="col carusel_left">
-                      <a href="#"><img src="img/pointer/left.png" alt="pointer"></a>
-                    </div>
-                    <div class="col carusel_center">
-                        <a href="#"><img class="carusel_center_1" src="img/pointer/circle_1.png" alt="circle"></a>
-                        <a href="#"><img class="carusel_center_2" src="img/pointer/circle_2.png" alt="circle"></a>
-                        <a href="#"><img class="carusel_center_3" src="img/pointer/circle_3.png" alt="circle"></a>
-                      </div>
-                      <div class="col carusel_right">
-                        <a href="#"><img src="img/pointer/right.png" alt="pointer"></a>
-                      </div>
-                </div>
-        </section>
-        <section class="promo">
-            <div class="promo_container">
-                
-                <img class="promo_img" src="img/bj/promo_img.png" alt="promo" class="promo_img">
-                
-                <div class="rectangle">
-                    <div class="promo_text">
-                        <span class="promo_text_info">немного о себе <br> </span>
-                        <span class="promo_text_name">Фотограф <br> Лика Зубкова</span>
-                        <div class="promo_text_description">
-                            <p>Добро пожаловать в мой мир фотографии!
-                            <br> Я - фотограф, как это ни банально звучит,<br> но выделить для себя одно направление я не могу, <br> не люблю себя ограничивать.</p> 
-                            <p>Фотография сначала была моим увлечением.<br> Позже это переросло в творчество,<br> а с 2019 года - это моя профессия.</p> 
+                <div class="rt">
+                    <div class="carousel__inner">
+                        <div>
+                            <img src="img/bj/main1.jpg" alt="1">
+                        </div>
+                        <div>
+                            <img src="img/bj/main2.jpg" alt="2">
+                        </div>
+                        <div>
+                            <img src="img/bj/main3.jpg" alt="3">
                         </div>
                     </div>
                 </div>
-            </div>
-        </section> -->
-        <section class="info">
-            <div class="container info_wedding">
-                <div class="row row_wedding">
-                    <div class="col-md-10 my-auto offset-md-1 info_col_wedding">
-                            <div class="info_rectangle_wedding">
-                                <span class="title_1_wedding">Свадебная <br> </span> 
-                                <span class="title_2_wedding">Фотосессия</span>
-                                    <div class="text_description_wedding">
-                                            В свадебной фотографии присутствует 
-                                            невероятное количество ярких и искренних  эмоций. <br> Мне нравится снимать настоящие 
-                                    эмоции, и я хочу, чтобы вы, рассматривая фотографии со свадьбы спустя несколько лет, снова испытывали то чувство счастья, которое было с вами в этот волшебный день.
-                                    </div>
-                                <span class="description_wedding"></span>
-                            </div>
-                            <div class="info_img_wedding">
-                                <img src="img/wedding/wedding_photo.jpg" alt="photo">
-                            </div>
-                    </div>
+                <div class="carousel_button">
+                    <button type="button" class="prev">
+                        <div class="prev-top"></div>
+                        <div class="prev-bottom"></div>
+                    </button>
+                    <button type="button" class="next">
+                        <div class="next-top"></div>
+                        <div class="next-bottom"></div>
+                    </button>
                 </div>
             </div>
-            <div class="container info_individual">
-                <div class="row row_individual">
-                    <div class="col-md-10 my-auto offset-md-1 info_col_individual">
-                            <div class="info_rectangle_individual">
-                                <span class="title_1_individual">Индивидуальная <br> </span> 
-                                <span class="title_2_individual">Фотосессия</span>
-                                    <div class="text_description_individual">
-                                            <!-- В свадебной фотографии присутствует 
-                                            невероятное количество ярких и искренних  эмоций. <br> Мне нравится снимать настоящие 
-                                    эмоции, и я хочу, чтобы вы, рассматривая фотографии со свадьбы спустя несколько лет, снова испытывали то чувство счастья, которое было с вами в этот волшебный день. -->
-                                    </div>
-                            </div>
-                            <div class="info_img_individual">
-                                <img src="img/individual/individual_img.jpg" alt="photo">
-                            </div>
-                    </div>
+         </section>
+
+         <section class="promo">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-6 promo_col">
+                      <div class="promo_scale"><img src="img/bj/main3.jpg" alt="1" class="promo_img"></div>
+                  </div>
+                  <div class="col-sm-6 promo_col">
+                    <div class="promo_scale"><img src="img/bj/main3.jpg" alt="1" class="promo_img"></div>
+                  </div>
+                  <div class="col-sm-6 promo_col">
+                    <div class="promo_scale"><img src="img/bj/main3.jpg" alt="1" class="promo_img"></div>
+                  </div>
+                  <div class="col-sm-6 promo_col">
+                    <div class="promo_scale"><img src="img/bj/main3.jpg" alt="1" class="promo_img"></div>
+                  </div>
                 </div>
-            </div>
-            <div class="container info_love_store">
-                <div class="row row_love_store">
-                    <div class="col-md-10 my-auto offset-md-1 info_col_love_store">
-                            <div class="info_rectangle_love_store">
-                                <span class="title_1_love_store">Фотосессия<br> </span> 
-                                <span class="title_2_love_store">Love Story</span>
-                                    <div class="text_description_love_store">
-                                            <!-- В свадебной фотографии присутствует 
-                                            невероятное количество ярких и искренних  эмоций. <br> Мне нравится снимать настоящие 
-                                    эмоции, и я хочу, чтобы вы, рассматривая фотографии со свадьбы спустя несколько лет, снова испытывали то чувство счастья, которое было с вами в этот волшебный день. -->
-                                    </div>
-                                <span class="description_love_store"></span>
-                            </div>
-                            <div class="info_img_love_store">
-                                <img src="img/love_store/love_store_img.jpg" alt="photo">
-                            </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container info_city">
-                <div class="row row_city">
-                    <div class="col-md-10 my-auto offset-md-1 info_col_city">
-                            <div class="info_rectangle_city">
-                                <span class="title_1_city">Фотосессия<br> </span> 
-                                <span class="title_2_city">В вашем городе</span>
-                                    <div class="text_description_city">
-                                            <!-- В свадебной фотографии присутствует 
-                                            невероятное количество ярких и искренних  эмоций. <br> Мне нравится снимать настоящие 
-                                    эмоции, и я хочу, чтобы вы, рассматривая фотографии со свадьбы спустя несколько лет, снова испытывали то чувство счастья, которое было с вами в этот волшебный день. -->
-                                    </div>
-                            </div>
-                            <div class="info_img_city">
-                                <img src="img/city/city_img.jpg" alt="photo">
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                
+         </section>
+
         
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src = "js/script.js"></script>
+    <script src = "js/script_hamburger.js"></script>
     </body>

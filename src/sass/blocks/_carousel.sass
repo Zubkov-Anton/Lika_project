@@ -1,10 +1,28 @@
 .carousel
-    padding-bottom: 80px
+    padding-right: var(--bs-gutter-x,.75rem)
+    padding-left: var(--bs-gutter-x,.75rem)
+    padding-bottom: 5%
+
     &_container
         position: relative
-        .container__inner
-            position: relative
-            display: flex
+    
+        
+.carousel_button
+    opacity: 0
+    visibility: hidden
+    transition: .55s opacity, .55s visibility
+    &:hover
+        opacity: 1
+        visibility: visible
+
+.rt:hover ~ .carousel_button
+    opacity: 1
+    visibility: visible
+    
+            
+
+
+
 .prev,.next
     position: absolute
     height: 50px
@@ -15,11 +33,23 @@
     top: 50%
     transform: translateY(-50%)
     left: 10px
+    
+    
+
+    @media (max-width:$Mobile_L)
+        display: none
+    
+
+    
     &-top,&-bottom
-        background: #f9fd0e
+        background: #ffffff
         height: 5px
         width: 30px
         border-radius: 6px 10px 10px 6px
+        
+        
+    
+
     .prev-top 
         transform: rotate(45deg)
         transform-origin: bottom left
@@ -44,6 +74,7 @@
         display: block
         width: 100%
         margin: 0 auto
+        
 
     
         
