@@ -1,0 +1,76 @@
+.promo_body
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 2%
+.promo_button
+    
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    text-decoration: none
+    text-transform: uppercase
+    color: #000000
+    background: #000000
+    font-size: 100%
+    letter-spacing: 0em
+    padding: 10px 30px
+    transition: 0.5s
+    &:hover
+        letter-spacing: 0.1em
+        color: #000000
+        background: var(--clr)
+        color: var(--clr)
+        box-shadow: 0 0 20px var(--clr)
+
+    &::before
+        content: ''
+        position: absolute
+        inset: 2px
+        background: #ffffff
+
+a span
+    
+    z-index: 1
+
+a i
+    position: absolute
+    inset: 0
+    display: block
+
+a i::before
+    content: ''
+    position: absolute
+    top: -6px
+    left: 90%
+    width: 15px
+    height: 15px
+    border: 2px solid#000000
+    border-radius: 20px
+    background: #ffffff
+    transform: translateX(-50%)
+    transition: 0.5s
+a:hover i::before
+    border: 2px solid var(--clr)
+    width: 20px
+    height:15px
+    left: 10%
+
+a i::after
+    content: ''
+    position: absolute
+    bottom: -6px
+    left: 10%
+    width: 15px
+    height: 15px
+    border: 2px solid #000000
+    border-radius: 20px
+    background: #ffffff
+    transform: translateX(-50%)
+    transition: 0.5s
+a:hover i::after
+    border: 2px solid var(--clr)
+    width: 20px
+    height: 15px
+    left: 90%
